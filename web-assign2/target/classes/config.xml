@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    &lt;!&ndash; Define beans for implementations &ndash;&gt;-->
+<!--    <bean id="emailNotification1" class="com.assign.concepts.EmailNotification"/>-->
+<!--    <bean id="smsNotification1" class="com.assign.concepts.SMSNotification"/>-->
+
+<!--    &lt;!&ndash; Inject EmailNotificationService or SMSNotificationService &ndash;&gt;-->
+<!--    <bean id="notificationController" class="com.assign.concepts.NotificationController">-->
+<!--        &lt;!&ndash; Change this to switch between implementations &ndash;&gt;-->
+<!--        <property name="notificationService" ref="emailNotification1"/>-->
+<!--    </bean>-->
+
+
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <!-- Define UserService Bean-->
+    <bean id="userService1" class="com.assign.concepts.UserService">
+
+    </bean>
+    
+    <!-- Define UserController bean-->
+    <bean id="userController" class="com.assign.concepts.UserController">
+        <!-- Injecting UserService via setter -->
+<!--        <property name="userService" ref="userService1"/>-->
+
+        <!-- Inject userService via Constructor-->
+        <constructor-arg ref="userService1"/>
+    </bean>
+</beans>
